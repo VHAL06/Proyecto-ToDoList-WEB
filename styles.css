@@ -1,8 +1,124 @@
 * {
-margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c9d6f9;
+    font-family: "DM Sans", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif, HYWenHei-GEW;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 5px;
+    padding-right: 35px;
+    padding-top: 15px;
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: rgb(118, 115, 115);
 }
 
 .logo {
-    height: 70px;
-    width: 140px;
+    height: auto;
+    width: 190px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.barra {
+    display: flex;
+    width: 700px;
+    height: 65px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.barra input {
+    flex: 1;
+    border: none;
+    padding: 0 16px;
+    font-size: 16px;
+    outline: none;
+    height: 100%;
+}
+
+.barra button {
+    border: none;
+    border-left: 2px solid #000000;
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 0 24px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    height: 100%;
+}
+
+.caja {
+    width: 700px;
+    max-height: 473px;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.538);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.caja-header {
+    padding: 0;
+    height: 40px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fafafa;
+    border-bottom: 2px solid black;
+
+}
+
+.caja-header button {
+    border: none;
+    cursor: pointer;
+    border-right: 2px solid rgb(0, 0, 0);
+    background-color: #4CAF50;
+    padding: 0 30px;
+    height: 100%;
+    font-size: 14px;
+}
+
+.caja-titulo {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    color: #1f1d1d;
+    font-size: 14px;
+}
+
+.caja-lista {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0;
+    min-height: 100px;
+}
+
+.caja-footer {
+    padding: 12px 20px;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #666;
 }

@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color: #c9d6f9;
-    font-family: "DM Sans", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif, HYWenHei-GEW;
+    background-color: #e8f7ff;
+    background-image: radial-gradient(circle, rgba(185, 185, 185, 0.118) 4px, transparent 2px);
+    background-size: 30px 30px; /* distancia entre círculos */
 }
 
 .encabezado {
@@ -15,11 +16,19 @@ body {
     gap: 5px;
     padding-right: 35px;
     padding-top: 15px;
+
 }
 
 .encabezado a {
+    font-family: "DM Sans", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif, HYWenHei-GEW;
     text-decoration: none;
     color: rgb(118, 115, 115);
+    font-weight: 700;
+}
+
+.encabezado a:hover {
+    color: #000000;
+    transition: 0.5s;
 }
 
 .logo {
@@ -32,6 +41,8 @@ body {
 }
 
 .barra {
+    font-family: sans-serif;
+    font-weight: 700;
     display: flex;
     width: 700px;
     height: 65px;
@@ -41,9 +52,22 @@ body {
     border: 2px solid #000000;
     margin: 0 auto;
     margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+.barra:hover {
+        box-shadow: none;
+        transition: 0.8s;
+
+}
+
+.barra input:hover {
+    background-color: #efe0b0fb;
+    transition: 0.5s;
 }
 
 .barra input {
+        font-family: "DM Sans", "PingFang SC", "Lantinghei SC", "Microsoft YaHei", "HanHei SC", "Helvetica Neue", "Open Sans", Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif, HYWenHei-GEW;
+
     flex: 1;
     border: none;
     padding: 0 16px;
@@ -53,31 +77,39 @@ body {
 }
 
 .barra button {
+    font-family:sans-serif;
     border: none;
     border-left: 2px solid #000000;
-    background-color: #4CAF50;
+    background-color: #eaaeae;
     color: rgb(0, 0, 0);
     padding: 0 24px;
     font-size: 16px;
     cursor: pointer;
-    font-weight: 500;
     height: 100%;
 }
 
 .caja {
+    font-family: sans-serif;
+    font-weight: 700;
     width: 700px;
     max-height: 473px;
     background-color: white;
     border-radius: 12px;
     border: 2px solid;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.538);
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     overflow: hidden;
 }
 
+.caja:hover {
+    box-shadow: none;
+    transition: 0.8s;;
+}
+
 .caja-header {
+    font-family: sans-serif;
     padding: 0;
     height: 40px;
     border-bottom: 1px solid #eaeaea;
@@ -93,18 +125,24 @@ body {
     border: none;
     cursor: pointer;
     border-right: 2px solid rgb(0, 0, 0);
-    background-color: #4CAF50;
+    background-color: #aeeab0;
     padding: 0 30px;
     height: 100%;
     font-size: 14px;
 }
 
 .caja-titulo {
+    font-family: sans-serif;
     display: flex;
     align-items: center;
     padding-right: 30px;
     color: #1f1d1d;
     font-size: 14px;
+}
+
+.caja-header:hover {
+    background-color: #efe0b0fb;
+    transition: 0.5s;
 }
 
 .caja-lista {
@@ -115,10 +153,18 @@ body {
 }
 
 .caja-footer {
+    font-family: sans-serif;
     padding: 12px 20px;
     border-top: 1px solid #eaeaea;
     text-align: center;
     background-color: #fafafa;
+    font-weight: 700;
     font-size: 14px;
+    border-top: 2px solid#000000;
     color: #666;
+}
+
+.caja-footer:hover {
+    background-color: #efe0b0fb;
+    transition: 0.5s;
 }

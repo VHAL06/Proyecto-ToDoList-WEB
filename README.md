@@ -13,7 +13,7 @@ CORS
 ## Instalación
 npm install
 
-### Base de datos
+## Base de datos
 CREATE DATABASE todo_db;
 USE todo_db;
 
@@ -42,17 +42,40 @@ http://localhost:3000
 
 
 ## Endpoints
-Método	      Ruta	                            Descripción
-GET    	    /api/todos	                      Listar tareas
-GET    	    /api/todos?status=active	        Tareas pendientes
-GET    	    /api/todos?status=completed	      Tareas completadas
-GET    	    /api/todos/:id	                  Obtener tarea
-POST  	    /api/todos	                      Crear tarea
-PUT    	    /api/todos/:id	                  Actualizar tarea
-DELETE	    /api/todos/:id	                  Eliminar tarea
-DELETE	    /api/todos/completed	            Eliminar completadas
+Listar tareas
+GET /api/todos
 
-# Notas
+Filtrar tareas
+GET /api/todos?status=active
+GET /api/todos?status=completed
+
+Obtener tarea por ID
+GET /api/todos/:id
+
+Crear tarea
+POST /api/todos
+
+Body (JSON):
+{
+  "title": "Nueva tarea"
+}
+
+Actualizar tarea
+PUT /api/todos/:id
+
+Body (JSON):
+{
+  "title": "Título actualizado",
+  "completed": true
+}
+
+Eliminar tarea por ID
+DELETE /api/todos/:id
+
+Eliminar todas las tareas completadas
+DELETE /api/todos/completed
+
+## Notas
 
 API probada con Postman
 Base de datos verificada con DBeaver

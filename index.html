@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ToDoList-VHAL</title>
-        <link type="favicon" rel="shortcut icon" href="public/img/favicon.png"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link href="/css/styles.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList-VHAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="/Frontend/CSS/styles.css" rel="stylesheet">
+</head>
 <body>
     <header class="encabezado">
         <a href="https://github.com/VHAL06"><i class="fab fa-github"></i></a>
@@ -16,6 +15,7 @@
         <a href="#">/</a>
         <a href="#">中</a>
     </header>
+
     <img class="logo" src="https://todo.uiineed.com/public/img/todo.svg" alt="logo del sitio">
 
     <div class="barra">
@@ -24,21 +24,27 @@
     </div>
 
     <section class="caja">
-        
-    <div class="caja-header">
-        <button class="btn-marcar">Marca Todas</button>
-        <span class="caja-titulo">Actua Ahora, Vida Simple☕</span>
-    </div>
+        <div class="caja-header">
+            <button class="btn-marcar" id="marcarTodasBtn">Marca Todas</button>
+            <span class="caja-titulo">Actua Ahora, Vida Simple☕</span>
+        </div>
 
-    <div class="caja-lista">
-        <div class="caja-item">
+        <div class="caja-lista" id="listaTareasContainer"></div>
+
+        <div class="caja-footer">
+            <span id="contadorPendientes">Tareas Restantes</span>
+            <button id="limpiarCompletadas" class="btn-limpiar-footer">Limpiar completadas</button>
+        </div>
+    </section>
+
+    <div class="filtros-container">
+        <div class="filtros">
+            <button class="filtro activo" data-filtro="all">Todas</button>
+            <button class="filtro" data-filtro="active">Pendientes</button>
+            <button class="filtro" data-filtro="completed">Completadas</button>
         </div>
     </div>
 
-    <div class="caja-footer">
-        <span>Tareas Restantes</span>
-    </div>
-</section>
-
+    <script src="/Frontend/JS/app.js"></script>
 </body>
 </html>

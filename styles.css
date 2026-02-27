@@ -319,3 +319,75 @@ body {
     margin: 10px;
     font-size: 16px;
 }
+
+@media (max-width: 768px) {
+    .barra, .caja, .filtros-container {
+        width: 90%;
+    }
+    
+    .barra {
+        height: 55px;
+    }
+    
+    .barra input {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .barra button {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    
+    .caja-header button, .btn-limpiar-footer {
+        padding: 0 15px;
+        font-size: 12px;
+    }
+    
+    .caja-titulo {
+        font-size: 12px;
+        padding-right: 15px;
+    }
+    
+    .caja-item {
+        height: 45px;
+        padding: 0 8px;
+    }
+    
+    .item-texto {
+        font-size: 14px;
+    }
+    
+    .btn-eliminar {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    .filtro {
+        font-size: 12px;
+    }
+    
+    #contadorPendientes {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .barra {
+        height: 50px;
+    }
+    
+    .caja-footer {
+        height: 45px;
+    }
+    
+    .btn-limpiar-footer {
+        padding: 0 10px;
+    }
+    
+    .filtros {
+        height: 35px;
+    }
+}
